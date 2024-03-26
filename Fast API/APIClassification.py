@@ -2,9 +2,22 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 import json
-
+import uvicorn
+from pyngrok import ngrok
+from fastapi.middleware.cors import CORSMiddleware
+import nest_asyncio
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class model_input(BaseModel):
     
@@ -44,3 +57,10 @@ def diabetes_predd(input_parameters : model_input):
         return 'The person is not diabetic'
     else:
         return 'The person is diabetic'
+
+
+    
+ngrok_tunnel = ngrok.connect(8000)
+print('Public URL:', ngrok_tunnel.public_url)
+nest_asyncio.apply()
+uvicorn.run(app, port=8000)
