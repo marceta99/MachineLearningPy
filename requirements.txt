@@ -1,0 +1,21 @@
+# Core Data Science libraries
+numpy
+pandas
+matplotlib
+scikit-learn
+
+# Association Rule Learning
+apyori
+
+# Deep Learning (if used)
+tensorflow
+
+# NLP (if used)
+nltk
+
+# FastAPI & server
+fastapi
+uvicorn
+
+# If you use joblib or any other additional libs, include them here:
+# joblib

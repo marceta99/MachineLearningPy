@@ -1,7 +1,3 @@
-Below is a **modern, concise, and visually pleasing** sample README.md you can adapt for your project. It assumes you have multiple machine learning models in Python, and showcases a polished structure. Feel free to customize **titles**, **descriptions**, and **links** to suit your specific repository. Enjoy!
-
----
-
 # **Multi-Model ML Playground** &middot; ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 An experimental repository exploring various Machine Learning models (Regression, Classification, Neural Networks, etc.) with Python. Built for quick prototyping, benchmarking, and showcasing foundational ML concepts.
@@ -51,8 +47,8 @@ Whether you’re **learning** ML or **prototyping** advanced algorithms, this pl
 
 1. **Clone the repo** (via SSH or HTTPS):
    ```bash
-   git clone https://github.com/your-username/your-ml-playground.git
-   cd your-ml-playground
+   git clone https://github.com/marceta99/MachineLearningPy.git
+   cd MachineLearningPy
    ```
 
 2. **Create and activate a virtual environment** (recommended):
@@ -68,7 +64,8 @@ Whether you’re **learning** ML or **prototyping** advanced algorithms, this pl
 
 4. **Run a sample model**:
    ```bash
-   python models/logistic_regression.py
+   cd "Association Rule Learning"
+   python Apriori.py
    ```
 
 ---
@@ -96,17 +93,51 @@ python models/random_forest.py --n_estimators 200 --max_depth 10
 ## **Project Structure**
 
 ```
-your-ml-playground/
-├── data/
-│   └── sample_dataset.csv
-├── models/
-│   ├── logistic_regression.py
-│   ├── svm.py
-│   ├── random_forest.py
-│   └── neural_network.py
-├── notebooks/
-│   └── exploration.ipynb
-├── requirements.txt
+MachineLearningPy/
+├── Association Rule Learning/
+│   ├── Apriori.py
+│   └── Market_Basket_Optimisation.csv
+├── Classification/
+│   ├── LogisticRegression.py
+│   └── Social_Network_Ads.csv
+├── Clustering/
+│   ├── KMeans.py
+│   └── Mall_Customers.csv
+├── Datapreprocessing/
+│   ├── Data.csv
+│   └── DataPreprocessing.py
+├── DeepLearning/
+│   ├── Artificial Neural Network/
+│   │   ├── Artificial Neural Networks.py
+│   │   └── Churn_Modelling.csv
+│   └── Convolutional Neural Network/
+│       ├── __MACOSX/       (System folder, can be ignored or removed)
+│       ├── dataset/
+│       └── Convolutional Neural Networks.py
+├── Fast API/
+│   ├── __pycache__/
+│   ├── APIClassification.py
+│   ├── Classification.py
+│   ├── diabetes_model.sav
+│   └── diabetes.csv
+├── Natural Language Processing/
+│   ├── Natural Language Processing.py
+│   └── Restaurant_Reviews.tsv
+├── Regression/
+│   ├── 50_Startups.csv
+│   ├── Data.csv
+│   ├── DesicionTreeRegression.py
+│   ├── MultipleLinearRegression.py
+│   ├── PolynomialRegression.py
+│   ├── Position_Salaries.csv
+│   ├── RandomForestRegression.py
+│   ├── RegressionModelSelection.py
+│   ├── Salary_Data.csv
+│   ├── SimpleLinearRegression.py
+│   └── SupportVectorRegression.py
+├── Reinforcement Learning/
+│   └── KMeans.py
+└── requirements.txt
 └── README.md
 ```
 
@@ -157,17 +188,6 @@ Contributions, issues, and feature requests are welcome!
 - Commit changes (`git commit -m 'Add awesome feature'`)  
 - Push to your branch (`git push origin feature/something`)  
 - Open a Pull Request  
-
----
-
-## **License**
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as you wish.
-
----
-
-> **Questions or Feedback?**  
-> Feel free to [open an issue](https://github.com/your-username/your-ml-playground/issues) or contact me directly. Enjoy experimenting with different ML models!
 
 ---
 
